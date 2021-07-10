@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro component with sign up form solution
 
-This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). 
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/css-grid-layout-flexbox-hkgHGKhNd). 
 
 
 ### Screenshot desktop version
@@ -16,8 +16,8 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ### Links
 
-- Solution URL: [solution URL here])
-- Live Site URL: [site ]()
+- Solution URL: [https://www.frontendmentor.io/solutions/css-grid-layout-flexbox-hkgHGKhNd])
+- Live Site URL: [site ](https://formulario-frontend-mentor.vercel.app/)
 
 ## My process
 
@@ -31,6 +31,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 ## Author
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@marcosDmc](https://www.frontendmentor.io/profile/marcosDmc)
 - Twitter - [@_m_code_](https://www.twitter.com/_m_code_)
 
