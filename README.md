@@ -17,7 +17,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/css-grid-layout-flexbox-hkgHGKhNd])
-- Live Site URL: [site ](https://formulario-frontend-mentor.vercel.app/)
 
 ## My process
 
