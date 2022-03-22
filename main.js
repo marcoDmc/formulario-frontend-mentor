@@ -1,62 +1,102 @@
+const formButtonBid = document.querySelector(".container__form__button-bid");
 
+// inputs
+const firstNameI = document.querySelector("#container__form-first-name");
+const lastNameI = document.querySelector("#container__form-last-name");
+const emailI = document.querySelector("#container__form-email");
+const passwordI = document.querySelector("#container__form-password");
+// imgs error
+const imgErrorFirstName = document.querySelector(
+  "#container__img-error-firstname"
+);
+const imgErrorLastName = document.querySelector(
+  "#container__img-error-lastname"
+);
+const imgErrorEmail = document.querySelector("#container__img-error-email");
+const imgErrorPassword = document.querySelector(
+  "#container__img-error-password"
+);
+// labels
+const labelfirstName = document.querySelector(
+  "#container__for__label-firstname"
+);
+const labellastName = document.querySelector("#container__for__label-lastname");
+const labelEmail = document.querySelector("#container__for__label-email");
+const labelPassword = document.querySelector("#container__for__label-password");
 
-const submit = document.querySelector(".submit")
+const submitButton = document.querySelector(".container__form__button-submit");
 
-const firstName = document.querySelector(".primeiro-nome")
+function handleValidationEmailAndLabels() {
+  if (!firstNameI.value) {
+    labelfirstName.style.display = "inline";
+  } else {
+    labelfirstName.style.display = "none";
+  }
 
-const lastName = document.querySelector('.ultimo-nome')
+  if (!lastNameI.value) {
+    labellastName.style.display = "inline";
+  } else {
+    labellastName.style.display = "none";
+  }
 
-const password = document.querySelector(".senha")
+  if (!emailI.value.includes("@") || !emailI.value.includes(".com")) {
+    emailI.style.borderColor = "red";
+    imgErrorEmail.style.display = "block";
+    labelEmail.style.display = "inline";
+  } else {
+    emailI.style.borderColor = "none";
+    imgErrorEmail.style.display = "none";
+    labelEmail.style.display = "none";
+  }
 
-const email = document.querySelector(".email")
+  if (!passwordI.value) {
+    labelPassword.style.display = "inline";
+  } else {
+    labelPassword.style.display = "none";
+  }
+}
 
-const required = document.querySelectorAll('[required]')
+function handleImgError() {
+  !firstNameI.value
+    ? (imgErrorFirstName.style.display = "block")
+    : (imgErrorFirstName.style.display = "none");
+  !lastNameI.value
+    ? (imgErrorLastName.style.display = "block")
+    : (imgErrorLastName.style.display = "none");
+  !emailI.value
+    ? (imgErrorEmail.style.display = "block")
+    : (imgErrorEmail.style.display = "none");
+  !passwordI.value
+    ? (imgErrorPassword.style.display = "block")
+    : (imgErrorPassword.style.display = "none");
 
+  handleValidationEmailAndLabels();
+}
 
-submit.addEventListener("click", (event) => {
-    event.preventDefault()
+function handleCheckValuesInput() {
+  !firstNameI.value
+    ? (firstNameI.style.borderColor = "red")
+    : (firstNameI.style.borderColor = "initial");
 
-    if (!firstName.value) {
-        firstName.classList.add("input-invalido")
-        alert('primeiro nome vazio')
+  !lastNameI.value
+    ? (lastNameI.style.borderColor = "red")
+    : (lastNameI.style.borderColor = "initial");
 
-    } else if (firstName.value) {
-        firstName.classList.remove("input-invalido")
-        firstName.classList.add("input-valido")
-    }
+  !emailI.value
+    ? (emailI.style.borderColor = "red")
+    : (emailI.style.borderColor = "initial");
 
-    if (!lastName.value) {
-        lastName.classList.add("input-invalido")
-        alert('ultimo nome vazio')
+  !passwordI.value
+    ? (passwordI.style.borderColor = "red")
+    : (passwordI.style.borderColor = "initial");
 
-    } else if (lastName.value) {
-        lastName.classList.remove("input-invalido")
-        lastName.classList.add("input-valido")
-    }
+  handleImgError();
+}
 
+function handleSubmit(event) {
+  event.preventDefault();
+  handleCheckValuesInput();
+}
 
-    if (!password.value) {
-        password.classList.add("input-invalido")
-        alert('senha vazia')
-
-    } else if (password.value) {
-        password.classList.remove("input-invalido")
-        password.classList.add("input-valido")
-    }
-    if(!email.value){
-        email.classList.add('input-invalido')
-        alert('email vazio')
-    }
-    else if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 || email.value.indexOf('@') - email.value.indexOf('.') === 1 
-    || email.value.indexOf('.') - email.value.indexOf('@') === 1){
-        email.classList.add("input-invalido")
-        alert('formato de email invalido')
-
-    }else{
-    
-        email.classList.remove('input-invalido')
-        email.classList.add('input-valido')
-        
-    }
-
-})
+submitButton.addEventListener("click", handleSubmit);
+formButtonBid.addEventListener("click", (event) => event.preventDefault());
