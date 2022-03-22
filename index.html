@@ -2,93 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Intro component with sign-up form</title>
 </head>
 
 <body>
-  <!--  -->
-  <!-- Lea;rn to code by watching others -->
-
-  <!-- See how experienced developers solve problems in real-time. Watching scripted tutorials is great,  -->
-  <!-- but under;standing how developers think is invaluable.  -->
-
-
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">marcos damasceno</a>.
-    </p>
-  </footer>
-
-
-
-
-
-
-  <section class="container">
-    <div class="corpo">
-      <div class="textos">
-        <h1 id="h1">Learn to code by <br> watching others</h1>
-        <p class="txt-p">see how experienced developers solve problems in real-time.
-          Watching scripted tutorials is great, ut understanung how
-          developers think is invaluable.
-        </p>
-
-      </div>
-
-      <div class="formulario-corpo">
-        <label for="gratis"></label>
-        <button class="gratis">Try it free 7 days <span> then $20/mo. thereafter</span></button>
-
-        <div class="formulario">
-
-          <label for="primeiro-nome"><input type="text" class="primeiro-nome" placeholder="first name" class="input-all"
-              maxlength="20" ></label>
-
-          <label for="ultimo-nome"><input type="text" class="ultimo-nome" placeholder="last name" class="input-all"
-              maxlength="20" ></label>
-
-          <label for="email"><input type="email" class="email" placeholder="email/address" class="input-all"
-              maxlength="25" ></label>
-
-          <label for="senha"><input type="password" class="senha" placeholder="password" class="input-all"
-              maxlength="10" ></label>
-
-          <label for="submit"><button class="submit">CLAIM YOUR FREE TRIAL</button></label>
-
-          <p class="link">By clikingthe button , you are agreeing to our<a href="#">terms and services</a></p>
+    <section class="container">
+        <div class="container__text-title">
+            <h1>Learn to code by watching others</h1>
+            <p>
+                see how experienced developers solve problems in real-time. Watching scripted tutorials is great, ut understanung how developers think is invaluable.
+            </p>
         </div>
-      </div>
+        <div class="container__form">
+            <button class="container__form__button-bid">
+               Try it free 7 days 
+               <a href="" id="container__form__ancor-thereafter"> then $20/mo. thereafter</a>   
+          </button>
+            <form action="#">
+                <fieldset>
+                    <div class="first__name">
+                        <label for="container__form-first-name">First Name cannot be empty</label>
+                        <input required type="text" maxlength="37" placeholder="first name" class="container__form-first-name" id="container__form-first-name">
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                    </div>
 
-    </div>
-  </section>
+                    <div class="last__name">
+                        <label for="container__form-last-name">Last Name cannot be empty</label>
+                        <input required type="text" maxlength="37" placeholder="last name" class="container__form-last-name" id="container__form-last-name">
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                    </div>
 
-
-
-
-
-
-  <script src="main.js"></script>
-
+                    <div class="email">
+                        <label for="container__form-email">Looks like this is not an email</label>
+                        <input required type="email" maxlength="37" placeholder="email" class="container__form-email" id="container__form-email">
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                    </div>
+                    <div class="password">
+                        <label for="container__form-password">Password cannot be empty</label>
+                        <input required type="password" maxlength="37" placeholder="password" class="container__form-password" id="container__form-password">
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                    </div>
+                    <button class="container__form__button-submit">claim your free trial</button>
+                    <span class="container__terms-services">
+                      By clikingthe button , you are agreeing to our <a href="#">terms a services</a>
+                    </span>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 </body>
+
+</html>
 
 </html>
