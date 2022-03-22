@@ -5,14 +5,14 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ### Screenshot desktop version
 
-![desktop](./images/version-desktop.png)
+![desktop](./images/desktop.png)
+#
+![](./images/form-status.png)
 
 ### Screenshot mobile version
 
 
-![mobile](./images/front-part1.png)
-![mobile](./images/frontend-part2.png)
-![mobile](./images/frontend-part3.png)
+![](./images/form-mobile-status.png)
 
 ### Links
 
