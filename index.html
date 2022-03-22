@@ -28,30 +28,30 @@
             <form action="#">
                 <fieldset>
                     <div class="first__name">
-                        <label for="container__form-first-name">First Name cannot be empty</label>
+                        <label for="container__form-first-name" id="container__for__label-firstname">First Name cannot be empty</label>
                         <input required type="text" maxlength="37" placeholder="first name" class="container__form-first-name" id="container__form-first-name">
-                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error" id="container__img-error-firstname"/>
                     </div>
 
                     <div class="last__name">
-                        <label for="container__form-last-name">Last Name cannot be empty</label>
+                        <label for="container__form-last-name" id="container__for__label-lastname">Last Name cannot be empty</label>
                         <input required type="text" maxlength="37" placeholder="last name" class="container__form-last-name" id="container__form-last-name">
-                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error" id="container__img-error-lastname"/>
                     </div>
 
                     <div class="email">
-                        <label for="container__form-email">Looks like this is not an email</label>
+                        <label for="container__form-email" id="container__for__label-email">Looks like this is not an email</label>
                         <input required type="email" maxlength="37" placeholder="email" class="container__form-email" id="container__form-email">
-                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error" id="container__img-error-email"/>
                     </div>
                     <div class="password">
-                        <label for="container__form-password">Password cannot be empty</label>
+                        <label for="container__form-password" id="container__for__label-password">Password cannot be empty</label>
                         <input required type="password" maxlength="37" placeholder="password" class="container__form-password" id="container__form-password">
-                        <img src="./images/icon-error.svg" class="container__form__input-img-error"/>
+                        <img src="./images/icon-error.svg" class="container__form__input-img-error" id="container__img-error-password"/>
                     </div>
                     <button class="container__form__button-submit">claim your free trial</button>
                     <span class="container__terms-services">
-                      By clikingthe button , you are agreeing to our <a href="#">terms a services</a>
+                      By clikingthe button , you are agreeing to our <a href="#" class="container__ancor-terms-services">terms a services</a>
                     </span>
                 </fieldset>
             </form>
